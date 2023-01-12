@@ -1,0 +1,134 @@
+@import 'variables';
+@import 'preset';
+
+.header {
+    background-color: $main-bg-color;
+    color: $add-color;
+
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        height: 70px;
+    }
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.footer {
+    background-color: $main-bg-color;
+    color: $add-color;
+
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        height: 50px;
+    }
+}
+
+.main {
+    background-color: #EBEEF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    _inner {
+        width: 100%;
+    }
+}
+
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 15px 20px;
+    background-color: #f9f8f5;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.input {
+    transition: box-shadow .3s;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 30px;
+    height: 40px;
+    border: 1px solid #C4CBD6;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+
+    &:focus,
+    &:hover {
+        box-shadow: 0 0 5px rgba(57, 80, 117, .4);
+    }
+}
+
+.btn {
+    transition: color .3s, background-color .3s;
+    background-color: $main-bg-color;
+    color: $add-color;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    padding: 10px 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($main-bg-color, 5%);
+        color: darken($add-color, 5%);
+    }
+}
+
+.todo {
+
+    &_list {
+        max-height: 480px;
+        overflow-y: auto;
+    }
+
+    &_item {
+        display: flex;
+        align-items: center;
+        color: #e5dfd6;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1;
+        background-color: $ming;
+        border-radius: 5px;
+        height: 40px;
+        padding: 5px 15px;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}
